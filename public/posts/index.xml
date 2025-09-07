@@ -10,13 +10,11 @@
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>현지화 전략</title>
-      <link>http://localhost:1313/posts/dev/font-management-strategy/</link>
+      <link>http://localhost:1313/posts/dev/localization-stragy/</link>
       <pubDate>Sun, 07 Sep 2025 23:04:36 +0900</pubDate>
-      <guid>http://localhost:1313/posts/dev/font-management-strategy/</guid>
+      <guid>http://localhost:1313/posts/dev/localization-stragy/</guid>
       <description>&lt;h1 id=&#34;유니티-현지화-전략&#34;&gt;유니티 현지화 전략&lt;/h1&gt;
-&lt;p&gt;이개발 프로세스 중 미리 현지화에 대한 전략을 잘 세우고 준비하는 것은 매우 중요합니다. 이 글에서는 유니티(Unity) 프로젝트에서 현지화를 효과적으로 관리하기 위한 전략과 팁을 공유합니다.&lt;/p&gt;
-&lt;h2 id=&#34;시작하기에-앞서&#34;&gt;시작하기에 앞서&lt;/h2&gt;
-&lt;p&gt;현지화를 한다는것은 단순히 텍스트를 번역하는 것 이상으로 복잡합니다. 예를 들어, 어떤 언어는 글자가 길어지거나 짧아질 수 있고, 어떤 언어는 오른쪽에서 왼쪽으로 읽히기도 하니까요. 혹은&lt;/p&gt;
+&lt;p&gt;게임 개발 프로세스 중 미리 현지화에 대한 전략을 잘 세우고 준비하는 것은 매우 중요합니다. 이 글에서는 유니티(Unity) 프로젝트에서 현지화를 효과적으로 관리하기 위한 전략과 팁을 공유합니다.&lt;/p&gt;
 
           &lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/vendors/admonitions.css&#34;&gt;
     &lt;div class=&#34;admonition note&#34;&gt;
@@ -25,6 +23,24 @@
       &lt;/div&gt;
       &lt;div class=&#34;admonition-content&#34;&gt;
         &lt;p&gt;Information the user should notice even if skimming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/dev/editor-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dev/editor-development/</guid>
+      <description>&lt;h2 id=&#34;에디터-개발&#34;&gt;에디터 개발&lt;/h2&gt;
+&lt;p&gt;유니티에서 좋은 UI/UX를 가진 에디터를 만드는것은 쉽지 않습니다. 다음과 같은 이유가 있기 때문입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;개발비용&lt;/strong&gt;: 제대로 된 에디터를 만들려면 많은 시간과 노력이 필요합니다. 하지만 게임 개발에 집중해야 하는 개발자 입장에서 에디터 개발에 많은 시간을 할애하기 어렵습니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;퍼포먼스&lt;/strong&gt;: 에디터 성능이 느려지지 않게 퍼포먼스를 최적화하는것도 쉽지 않습니다. 특히 많은 데이터를 다루는 에디터의 경우 더욱 그렇습니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;에디터이해도&lt;/strong&gt;: 에디터를 잘 만들려면 유니티 에디터 API에 대한 깊은 이해가 필요합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;개발이해도&lt;/strong&gt;: 에디터를 잘 만들려면 유니티를 사용하여 게임을 개발하는 개발자들의 요구사항을 잘 이해해야 합니다. 그러려면, 직접 게임 개발을 많이 해 봐야합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;접근성&lt;/strong&gt;:아무리 좋은 툴을 만들어도 접근성이 좋지 않으면 사용자가 사용하지 않습니다. 즉, 좋은 UI/UX를 설계하는것도 쉽지 않습니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API-에디터호환성&lt;/strong&gt;:레거시를 지원해야 할지, 최신 버전만 지원할지 결정하는것도 쉽지 않습니다. 예를들면 Resources와 Addressables 중 어떤것을 지원할지, 둘다 지원할지 같은 것입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;에디터 렌더링 기술스택&lt;/strong&gt;: ImGUI를 선택해야하는 경우와 UIToolkit을 선택해야하는 경우를 잘 판단해야 합니다. 하지만 이것역시 쉽지 않습니다. (UIToolkit이 ImGUI보다 무조건 좋은것은 아닙니다. 반대로 ImGUI가 UIToolkit보다 무조건 좋은것도 아닙니다. 요구사항과 상황에따라 다르다는 의미입니다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;등등. 여러가지 이유로 인해 유니티에서 좋은 에디터를 만드는것은 쉽지 않습니다. 하지만 이 글에서는 최신 에디터에서는 어떻게 개발하는게 좋은지에 대해 제 개인적인 생각을 이야기해보겠습니다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
