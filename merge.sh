@@ -16,6 +16,7 @@ git checkout main
 
 if [ $? -ne 0 ]; then
   echo "오류: main 브랜치로 전환하지 못했습니다."
+  git checkout "$current_branch"
   exit 1
 fi
 
