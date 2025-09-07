@@ -10,6 +10,7 @@
       "footer",
       "h1",
       "h2",
+      "h3",
       "head",
       "header",
       "html",
@@ -65,12 +66,15 @@
       "top-link"
     ],
     "ids": [
+      "imgui를-사용해도-될-때",
       "menu",
       "moon",
       "sun",
       "theme-toggle",
       "top",
       "top-link",
+      "uitoolkit-vs-imgui",
+      "uitoolkit과-imgui를-같이-사용해야-할-때",
       "에디터-개발",
       "유니티-현지화-전략",
       "유니티에서의-현지화-관리",
