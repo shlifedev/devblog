@@ -2,4 +2,43 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
-theme = 'PaperMod'
+theme = ["hugo-admonitions","PaperMod"]
+
+[build]
+  writeStats = true  # 통계 정보 생성
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      strikethrough = false
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.subscript]
+          enable = true
+
+[params]
+  author = "shlifedev"
+  description = "개발블로그"
+
+
+enableRobotsTXT = true
+enableGitInfo = true
+
+
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[menu]
+  [[menu.main]]
+    name = "홈"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "깃허브"
+    url = "https://shlife.dev"
+    weight = 10
+
+ 

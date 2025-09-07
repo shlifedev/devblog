@@ -9,11 +9,22 @@
     <lastBuildDate>Sun, 07 Sep 2025 23:04:36 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/dev/my-first-post/</link>
+      <title>현지화 전략</title>
+      <link>http://localhost:1313/posts/dev/font-management-strategy/</link>
       <pubDate>Sun, 07 Sep 2025 23:04:36 +0900</pubDate>
-      <guid>http://localhost:1313/posts/dev/my-first-post/</guid>
-      <description></description>
+      <guid>http://localhost:1313/posts/dev/font-management-strategy/</guid>
+      <description>&lt;h1 id=&#34;유니티-현지화-전략&#34;&gt;유니티 현지화 전략&lt;/h1&gt;
+&lt;p&gt;이개발 프로세스 중 미리 현지화에 대한 전략을 잘 세우고 준비하는 것은 매우 중요합니다. 이 글에서는 유니티(Unity) 프로젝트에서 현지화를 효과적으로 관리하기 위한 전략과 팁을 공유합니다.&lt;/p&gt;
+&lt;h2 id=&#34;시작하기에-앞서&#34;&gt;시작하기에 앞서&lt;/h2&gt;
+&lt;p&gt;현지화를 한다는것은 단순히 텍스트를 번역하는 것 이상으로 복잡합니다. 예를 들어, 어떤 언어는 글자가 길어지거나 짧아질 수 있고, 어떤 언어는 오른쪽에서 왼쪽으로 읽히기도 하니까요. 혹은&lt;/p&gt;
+
+          &lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/vendors/admonitions.css&#34;&gt;
+    &lt;div class=&#34;admonition note&#34;&gt;
+      &lt;div class=&#34;admonition-header&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 576 512&#34;&gt;&lt;path d=&#34;M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 125.7-86.8 86.8c-10.3 10.3-17.5 23.1-21 37.2l-18.7 74.9c-2.3 9.2-1.8 18.8 1.3 27.5L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z&#34;/&gt;&lt;/svg&gt;
+        &lt;span&gt;Note&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;admonition-content&#34;&gt;
+        &lt;p&gt;Information the user should notice even if skimming.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
